@@ -189,7 +189,7 @@ div.information{
 div.network{
     display: flex;
     justify-content: space-between;
-    width: 57%;
+    width: 58%;
     align-items: center;
     padding-top: 10px;
 }
@@ -400,6 +400,7 @@ div.footer{
     color: rgba(255, 255, 255, 0.61);
 }
 div.leftProfiles{
+    width: 280px;
     top: 70px;
     left: 15px;
 }
@@ -407,8 +408,8 @@ div.explorefashion{
     position: absolute;
     top: 90px;
     z-index: 20;
-    right: 12px;
-    width: 75%;
+    right: 20px;
+    width: 70%;
 }
 div.fashion{
     border-radius: 15px;
@@ -426,6 +427,7 @@ div.men span, div.women span, div.kid span{
     font-size: 15px;
     padding-top: 16px;
     padding-bottom: 16px;
+    width: 100%;
 }
 div.picture{
     display: block;
@@ -433,19 +435,19 @@ div.picture{
     margin-right: auto;
 }
 img.man{
-    height: 244px;
+    height: 236px;
     padding-left: 5px;
     padding-right: 5px;
     border-radius: 10px;
 }
 img.kid{
-    height: 205px;
+    height: 195px;
     padding-left: 5px;
     padding-right: 5px;
     border-radius: 10px;
 }
 img.woman{
-    height: 278px;
+    height: 268px;
     padding-left: 5px;
     padding-right: 5px;
     border-radius: 10px;
@@ -458,10 +460,13 @@ div.kid{
         display: none;
     }
     img.woman{
-        height: 297px;
+        height: 250px;
     }
-    div.explorefashion{
-        width: 75%;
+    img.man{
+        height: 205px;
+    }
+    img.kid{
+        height: 165px;
     }
 }
 @media screen and (max-width: 1100px){
