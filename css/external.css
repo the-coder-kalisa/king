@@ -4,8 +4,11 @@
     box-sizing: border-box;
     font-family: sans-serif;
 }
+body{
+    background: #0e1a2b;
+}
 div.topnav {
-    background-color: #121F32;
+    background-color: #182539;
     width: 100%;
     display: flex;
     justify-content: space-between;
@@ -90,9 +93,6 @@ div.dropdown{
     display: flex;
     justify-content: space-between;
     width: 40px;
-}
-body{
-    background: #1C3153;
 }
 div.truebody{
     display: flex;
@@ -509,4 +509,21 @@ div.kid{
     img.man2{
         display: block;
     }
+}
+::-webkit-scrollbar{
+    background-color: #182539;
+    width: 11px;
+    border-radius: 10px;
+}
+::-webkit-scrollbar-thumb:hover{
+    background-color: #495668;
+}
+::-webkit-scrollbar-thumb{
+    background-color: #364458;
+    border-radius: 10px;
+    width: 2px;
+}
+
+::-webkit-scrollbar:hover{
+    /* background: #152337; */
 }
