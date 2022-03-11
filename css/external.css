@@ -403,6 +403,8 @@ div.leftProfiles{
     width: 280px;
     top: 70px;
     left: 15px;
+    position: absolute;
+    z-index: 5;
 }
 div.explorefashion{
     position: absolute;
