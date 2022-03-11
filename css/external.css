@@ -399,3 +399,99 @@ div.social i{
 div.footer{
     color: rgba(255, 255, 255, 0.61);
 }
+div.leftProfiles{
+    top: 70px;
+    left: 35px;
+}
+div.explorefashion{
+    position: absolute;
+    top: 90px;
+    z-index: 20;
+    right: 25px;
+    width: 75%;
+}
+div.fashion{
+    border-radius: 15px;
+    background: #112645;
+    margin-bottom: 20px;
+}
+div.men, div.women, div.kid{
+    flex-direction: column;
+    display: flex;
+    width: 100%;
+}
+div.men span, div.women span, div.kid span{
+    color: white;
+    text-align: center;
+    font-size: 15px;
+    padding-top: 16px;
+    padding-bottom: 16px;
+}
+div.picture{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+img.man{
+    height: 250px;
+    padding-left: 5px;
+    padding-right: 5px;
+    border-radius: 10px;
+}
+img.kid{
+    height: 206px;
+    padding-left: 5px;
+    padding-right: 5px;
+    border-radius: 10px;
+}
+img.woman{
+    height: 285px;
+    padding-left: 5px;
+    padding-right: 5px;
+    border-radius: 10px;
+}
+div.kid{
+    padding-bottom: 25px;
+}
+@media screen and (max-width:1472px){
+    img.man2{
+        display: none;
+    }
+    img.woman{
+        height: 307px;
+    }
+}
+@media screen and (max-width: 1280px){
+    img.logo{
+        display: none;
+    }
+    div.searpro{
+        display: none;
+    }
+    div.navcenter{
+        width: 100%;
+        justify-content: center;
+    }
+    div.leftProfile{
+        display: none;
+    }
+    div.right{
+        display: none;
+    }
+    div.center{
+        width: 80%;
+    }
+    img.man{
+        width: 100%;
+        min-width: 50%;
+        height: auto;
+    }
+    img.woman{
+        width: 100%;
+        min-width: 50%;
+        height: auto;
+    }
+    img.man2{
+        display: block;
+    }
+}
