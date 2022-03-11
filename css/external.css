@@ -121,7 +121,7 @@ div.leftProfile{
     width: 270px;
     height: 580px;
     position: fixed;
-    left: 2%;
+    left: 1%;
     z-index: 50;
 }
 div.center{
@@ -348,7 +348,7 @@ img.lastlogo{
 div.right{
     width: 280px;
     position: fixed;
-    right: 2%;
+    right: 1%;
     height: 360px;
     display: flex;
     justify-content: center;
