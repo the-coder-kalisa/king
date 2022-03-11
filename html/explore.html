@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/external.css">
+    <script src="https://kit.fontawesome.com/954941076f.js" crossorigin="anonymous"></script>
+    <title>Document</title>
+    <style>
+        div.fashion{
+            position: absolute;
+            top: 15px;
+            right: 63px;
+            width: 70%;
+            background: #112645;
+            border-radius: 10px;
+        }
+        div.leftProfiles{
+            left: 72px;
+        }
+        img[alt="men"]{
+            width: 255px;
+            height: 269px;
+            padding-left: 7px;
+            padding-right: 7px;
+        }
+        img[alt="mens"]{
+            width: 245px;
+            height: 269px;
+        }
+        img.firstwom{
+            width: 307px;
+        }
+        img.thirdwom{
+            width: 232px;
+        }
+        img.lastwom{
+            width: 192px;
+        }
+        img[alt="woman"]{
+            height: 305px;
+            padding-left: 7px;
+            padding-right: 7px;
+        }
+        img[alt="kid"]{
+            height: 208px;
+            padding-left: 7px;
+            padding-right: 7px;
+        }
+        div.picture{
+            display: flex;
+            justify-content: center;
+        }
+        div.men span{
+            margin-top: 25px;
+            margin-bottom: 25px;
+        }
+        div.men{
+            color: white;
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+        }
+        /* img.man1{
+            width: 205px;
+        }
+        img.man2{
+            width: 246px;
+        } */
+    </style>
+</head>
+<body>
+    <div class="topnav">
+        <img src="images/logo.png" class="logo" alt="logo">
+        <div class="navcenter">
+            <a href="../index.html">Home</a>
+            <a href="./explore.html" class="active">Explore</a>
+            <a href="./chat.html">Chat</a>
+            <a href="#">Notification</a>
+        </div>
+        <div class="searpro">
+            <div class="search"><input type="search" placeholder="Search..."><i class="fa-solid fa-magnifying-glass"></i></div>
+            <div class="profile">
+                <img src="images/profile.jpg" alt="profile">
+                <div class="dropdown"><span>Me</span><i class="fa-solid fa-sort-down"></i></div>
+            </div>
+        </div>
+    </div>
+    <div class="truebody">
+       <div class="body leftProfile leftProfiles">
+        <img src="images/profile.jpg" alt="leftprofile">
+           <div class="background"></div>
+           <div class="info">
+               <span>Giovanni.the.coder</span>
+               <span>Fashion Assistant</span>
+           </div>
+           <hr class="divide">
+           <div class="information">
+                <div class="people">
+                    <i class="fa-solid fa-users"></i>
+                   <div class="description"><span>Followers</span><span>1K people</span></div>
+                </div>
+                <div class="network">
+                    <i class="fa-solid fa-globe"></i>
+                    <div class="description"><span>Connections</span><span>2 people</span></div>
+                </div>
+                <hr class="divide">
+                <div class="cart">
+                    <i class="fa-solid fa-briefcase"></i>
+                    <div class="description"><span>Cart</span><span>4 items</span></div>
+                </div>
+                <div class="balance">
+                    <i class="fa-solid fa-scale-balanced"></i>
+                    <div class="description"><span>Your Balance</span><span>444 FRW</span></div>
+                </div>
+                <hr class="divide">
+                <div class="grevent">
+                    <span>Groups</span><span>Events</span>
+                </div>
+           </div>
+       </div>
+        <div class="fashion">
+            <div class="men">
+                <span>Men's Fashion</span>
+                <div class="picture">
+                   <img src="./images/man4.jpg" alt="men">
+                   <img src="./images/man1.jpg" alt="men">
+                   <img src="./images/man2.jpg" alt="men">
+                   <img src="./images/lastman.jpg" alt="men">
+                </div>
+            </div>
+            <div class="women men">
+                <span>Women's Fashion</span>
+                <div class="picture">
+                   <img class="firstwom" src="./images/woman1.jpg" alt="woman">
+                   <img class="secondwom" src="./images/dom-hill-nimElTcTNyY-unsplash.jpg" alt="woman">
+                   <img class="woman" src="./images/wman.jpg" alt="woman">
+                   <!-- <img class="lastwom" src="./images/woman4.webp" alt="woman"> -->
+                </div>
+            </div>
+            <div class="women men">
+                <span>Kids's Fashion</span>
+                <div class="picture">
+                   <img class="firstwom" src="./images/kid1.jpg" alt="kid">
+                   <img class="secondwom" src="./images/kid2.jpg" alt="kid">
+                   <img class="woman" src="./images/kid3.webp" alt="kid">
+                   <!-- <img class="lastwom" src="./images/kid4.jpg" alt="kid"> -->
+                </div>
+            </div>
+        </div>
+    </div>
+ </div>
+</body>
+</html>
