@@ -461,7 +461,7 @@ div.kid{
         height: 307px;
     }
 }
-@media screen and (max-width: 1280px){
+@media screen and (max-width: 1200px){
     img.logo{
         display: none;
     }
