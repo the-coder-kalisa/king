@@ -22,7 +22,7 @@ div.topnav img.logo{
 div.navcenter{
     display: flex;
     list-style-type: none;
-    justify-content: space-around;
+    justify-content: space-between;
     width: 370px;
     height: 100%;
     font-size: 15px;
@@ -122,6 +122,7 @@ div.leftProfile{
     height: 580px;
     position: fixed;
     left: 5%;
+    z-index: 50;
 }
 div.center{
     width: 520px;
@@ -397,28 +398,4 @@ div.social i{
 }
 div.footer{
     color: rgba(255, 255, 255, 0.61);
-}
-@media screen and (max-width: 1200px){
-    img.logo{
-        display: none;
-    }
-    div.searpro{
-        display: none;
-    }
-    div.navcenter{
-        width: 100%;
-        justify-content: center;
-    }
-    div.leftProfile{
-        display: none;
-    }
-    div.right{
-        display: none;
-    }
-    div.center{
-        width: 80%;
-    }
-    img[alt="men"]{
-        display: block;
-    }
 }
