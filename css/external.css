@@ -6,6 +6,12 @@
 }
 body{
     background: #0e1a2b;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+img.man, img.woman, img.kid{
+    filter: brightness(0.78);
+    /* filter: */
 }
 div.topnav {
     background-color: #182539;
@@ -401,17 +407,17 @@ div.footer{
 }
 div.leftProfiles{
     width: 280px;
-    top: 70px;
+    top: 100px;
     left: 15px;
     position: absolute;
     z-index: 40;
 }
 div.explorefashion{
-    position: absolute;
-    top: 90px;
     z-index: 20;
-    right: 20px;
+    position: relative;
+    margin-right: 30px;
     width: 70%;
+    margin-bottom: 40px;
 }
 div.fashion{
     border-radius: 15px;
@@ -523,7 +529,6 @@ div.kid{
     border-radius: 10px;
     width: 2px;
 }
-
 ::-webkit-scrollbar:hover{
     /* background: #152337; */
 }
