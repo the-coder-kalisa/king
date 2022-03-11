@@ -8,7 +8,56 @@
     <script src="https://kit.fontawesome.com/954941076f.js" crossorigin="anonymous"></script>
     <title>Document</title>
     <style>
+div.bottom {
+    background-color: #112645;
+    width: 100%;
+    position: absolute;
+    bottom: -362px;
+    z-index: 20;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 300px;
+}
+div.bottom div.header{
+    color: white;
+    padding-bottom: 20px;
+    font-size: 20px;
+    font-weight: 400px;
+}
+div.topic{
+    display: flex;
+    justify-content: space-around;
+}
+div.topic div.informat{
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    height: 120px;
 
+}
+div.descriptioners{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    font-weight:200;
+    font-size: 15px;
+    color: rgba(255, 255, 255, 0.62);
+    width: 191px;
+    
+}
+div.informat div.company{
+    display: flex;
+    flex-direction: column;
+}
+div.informat div a{
+    color: rgba(255, 255, 255, 0.62);
+    text-decoration: none;
+}
+div.informat div a:hover{
+    text-decoration: underline;
+    color: #2063C6;
+}
     </style>       
 </head>
 <body>
@@ -91,10 +140,27 @@
             </div>
         </div>
     </div>
- <div>
-     ksjfds;ldfjslksdjfslfklsjdfklsjdflkjsdflkjsdlkfjsdlkjf
-     klsdjflksdfjs;ldkjf;sdlkjfdskljfl
-     Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio, alias? Iste earum voluptates facere, exercitationem consequuntur aut, omnis et ex nihil, aliquam porro nemo ipsa laboriosam quod culpa cupiditate excepturi.
- </div>
+    <div class="bottom">
+        <img src="./images/logo.png" alt="logo" class="logo">
+        <div class="topic">
+            <div class="informat">
+                <div class="header">Why Coders Club?</div>
+                <div class="descriptioners">Coders Club provides good services for fashion and related platform. It allow you to talk to your client via online</div>
+            </div>
+            <div class="informat">
+                <div class="header">Services</div>
+                <div class="descriptioners">Coders Club provides tour world wide on fashion in addition it provides clothes.</div>
+            </div>
+            <div class="informat">
+                <div class="header">Company</div>
+                <div class="company">
+                    <a href="#">About Us</a>
+                    <a href="#">Leadership</a>
+                    <a href="#">News</a>
+                    <a href="#">Media Kit</a>
+                </div>
+            </div>
+        </div>
+    </div>
 </body>
 </html>

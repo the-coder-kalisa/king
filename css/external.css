@@ -14,7 +14,7 @@ div.topnav {
     z-index: 50;
     height: 73px;
 }
-div.topnav img.logo{
+img.logo{
     width: 350px;
     height: 73px;
     margin-left: 25px;
@@ -122,7 +122,7 @@ div.leftProfile{
     height: 580px;
     position: fixed;
     left: 1%;
-    z-index: 50;
+    z-index: 40;
 }
 div.center{
     width: 520px;
@@ -404,7 +404,7 @@ div.leftProfiles{
     top: 70px;
     left: 15px;
     position: absolute;
-    z-index: 5;
+    z-index: 40;
 }
 div.explorefashion{
     position: absolute;
