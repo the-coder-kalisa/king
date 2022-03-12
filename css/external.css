@@ -28,6 +28,10 @@ img.logo{
     height: 73px;
     margin-left: 25px;
 }
+img.logos{
+    width: 340px;
+    height: 70px;
+}
 div.navcenter{
     display: flex;
     list-style-type: none;

@@ -8,13 +8,21 @@
     <script src="https://kit.fontawesome.com/954941076f.js" crossorigin="anonymous"></script>
     <title>Document</title>
     <style>
-div.bottom {
+div.bottom{
     background-color: #112645;
     display: flex;
     justify-content: space-around;
     align-items: center;
-    height: 280px;
+    height: 400px;
     width: 100%;
+    flex-direction: column;
+}
+div.bottomer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 280px;
+    width: 75%;
 }
 div.container {
     position: absolute;
@@ -33,10 +41,11 @@ div.bottom div.header{
 }
 div.topic{
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
+    width: 80vh;
 }
 div.topic div.informat{
-    width: 300px;
+    /* width: 280px; */
     display: flex;
     flex-direction: column;
     height: 120px;
@@ -63,6 +72,44 @@ div.informat div a{
 div.informat div a:hover{
     text-decoration: underline;
     color: #2063C6;
+}
+hr.companyDivide{
+    width: 76%;
+}
+div.hotline{
+    display: flex;
+    justify-content: space-between;
+    width: 76%;
+}
+div.hotline div.about{
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    width: 45%;
+    font-weight: 300;
+    font-size: 15px;
+}
+div.hotline div.icon{
+    color: black;
+    font-size: 20px;
+    width: 12%;
+    display: flex;
+    justify-content: space-between;
+}
+div.icon i, div.social i{
+    cursor: pointer;
+}
+i.fa-facebook{
+    color: #097eeb;
+}
+i.fa-instagram{
+    color: #c935b0;
+}
+i.fa-linkedin{
+    color: #0E76A8;
+}
+i.fa-github{
+    color: #171515;
 }
     </style>       
 </head>
@@ -148,7 +195,8 @@ div.informat div a:hover{
         </div>
     </div>
     <div class="bottom">
-        <img src="./images/logo.png" alt="logo" class="logo">
+        <div class="bottomer">
+        <img src="./images/logo.png" alt="logos" class="logos">
         <div class="topic">
             <div class="informat">
                 <div class="header">Why Coders Club?</div>
@@ -166,6 +214,24 @@ div.informat div a:hover{
                     <a href="#">News</a>
                     <a href="#">Media Kit</a>
                 </div>
+            </div>
+        </div>
+        </div>
+        <hr class="companyDivide">
+        <div class="hotline">
+            <div class="about">
+                <span>Status</span>
+                <span>Privacy</span>
+                <span>Terms</span>
+                <span>Cookie Preferences</span>
+                <span>Contact Us</span>
+                <span>Change Language</span>
+            </div>
+            <div class="icon">
+                <i class="fa-brands fa-facebook"></i>
+                <i class="fa-brands fa-instagram"></i>
+                <i class="fa-brands fa-linkedin-in"></i>
+                <i class="fa-brands fa-github"></i>
             </div>
         </div>
     </div>
