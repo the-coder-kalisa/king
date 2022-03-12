@@ -1,30 +1,38 @@
-*{
-    margin:0;
-    padding:0;
+* {
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
     font-family: sans-serif;
 }
-::-webkit-scrollbar{
+
+::-webkit-scrollbar {
     background-color: #182539;
     width: 11px;
     border-radius: 10px;
 }
-::-webkit-scrollbar-thumb:hover{
+
+::-webkit-scrollbar-thumb:hover {
     background-color: #495668;
 }
-::-webkit-scrollbar-thumb{
+
+::-webkit-scrollbar-thumb {
     background-color: #364458;
     border-radius: 10px;
     width: 2px;
 }
-body{
+
+body {
     background: #0e1a2b;
     overflow-y: scroll;
     overflow-x: hidden;
 }
-img.man, img.woman, img.kid{
+
+img.man,
+img.woman,
+img.kid {
     filter: brightness(0.78);
 }
+
 div.topnav {
     background-color: #182539;
     width: 100%;
@@ -35,16 +43,19 @@ div.topnav {
     z-index: 50;
     height: 73px;
 }
-img.logo{
+
+img.logo {
     width: 350px;
     height: 73px;
     margin-left: 25px;
 }
-img.logos{
+
+img.logos {
     width: 340px;
     height: 70px;
 }
-div.navcenter{
+
+div.navcenter {
     display: flex;
     list-style-type: none;
     justify-content: space-between;
@@ -52,12 +63,14 @@ div.navcenter{
     height: 100%;
     font-size: 15px;
 }
-div.navcenter a{
+
+div.navcenter a {
     padding: 26px 10px 26px 10px;
     color: white;
     text-decoration: none;
 }
-div.search{
+
+div.search {
     background: #1F2E43;
     border: none;
     outline: none;
@@ -68,7 +81,8 @@ div.search{
     justify-content: space-between;
     align-items: center;
 }
-input[type="search"]{
+
+input[type="search"] {
     background: #1F2E43;
     border-top-left-radius: 20px;
     border-bottom-left-radius: 20px;
@@ -81,42 +95,50 @@ input[type="search"]{
     padding: 5px;
     text-indent: 15px;
 }
-i.fa-magnifying-glass{
+
+i.fa-magnifying-glass {
     background: #54646C;
     border-radius: 9999px;
     padding: 10px;
     color: white;
 }
-div.profile{
+
+div.profile {
     display: flex;
     flex-direction: column;
     color: #889499;
 }
-img[alt="profile"]{
+
+img[alt="profile"] {
     width: 44px;
     height: 44px;
     border-radius: 9999px;
 }
-div.searpro{
+
+div.searpro {
     display: flex;
     justify-content: space-between;
     width: 400px;
     align-items: center;
     margin-right: 20px;
 }
-div.navcenter a.active{
-    border-bottom: 3px solid  #2B9B9E;
+
+div.navcenter a.active {
+    border-bottom: 3px solid #2B9B9E;
 }
-div.navcenter a:hover{
+
+div.navcenter a:hover {
     border-bottom: 3px solid #2B9B9E;
     cursor: pointer;
 }
-div.dropdown{
+
+div.dropdown {
     display: flex;
     justify-content: space-between;
     width: 40px;
 }
-div.truebody{
+
+div.truebody {
     display: flex;
     width: 100%;
     z-index: 20;
@@ -124,20 +146,23 @@ div.truebody{
     position: absolute;
     top: 73px;
 }
-div.background{
+
+div.background {
     background: #C4C4C4;
     width: 100%;
     height: 80px;
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
 }
-div.body{
+
+div.body {
     background: #112645;
     box-shadow: 5px 5px 50px rgba(0, 0, 0, 0.25);
     border-radius: 10px;
     margin-top: 20px;
 }
-div.leftProfile{
+
+div.leftProfile {
     background: #112645;
     /* background: #273A53; */
     width: 270px;
@@ -146,10 +171,12 @@ div.leftProfile{
     left: 1%;
     z-index: 40;
 }
-div.center{
+
+div.center {
     width: 520px;
 }
-img[alt="leftprofile"]{
+
+img[alt="leftprofile"] {
     width: 70px;
     height: 70px;
     border-radius: 9999px;
@@ -157,6 +184,7 @@ img[alt="leftprofile"]{
     top: 50px;
     left: 36%;
 }
+
 div.info {
     display: flex;
     justify-content: center;
@@ -164,76 +192,94 @@ div.info {
     flex-direction: column;
     margin-top: 50px;
 }
-div.info span:first-child{
+
+div.info span:first-child {
     font-weight: 600;
     padding-bottom: 8px;
     font-size: 20px;
     color: white;
 }
-div.info span:last-child{
+
+div.info span:last-child {
     font-size: 15px;
     color: #C5C5C5;
 }
-hr.divide{
+
+hr.divide {
     color: #c4c4c4;
     background-color: #c4c4c4;
     height: 2px;
     margin-top: 20px;
     margin-bottom: 20px;
 }
-div.people{
+
+div.people {
     display: flex;
     justify-content: space-between;
     width: 50%;
     align-items: center;
 }
-div.description{
+
+div.description {
     display: flex;
     flex-direction: column;
     align-items: space-between;
     height: 40px;
     justify-content: space-between;
 }
-i.fa-users, i.fa-globe, i.fa-briefcase, i.fa-scale-balanced{
+
+i.fa-users,
+i.fa-globe,
+i.fa-briefcase,
+i.fa-scale-balanced {
     color: #2B9B9E;
     font-size: 25px;
 }
-div.description span:first-child{
+
+div.description span:first-child {
     color: white;
 }
-div.description span:last-child{
+
+div.description span:last-child {
     color: #81858B;
     font-size: 14px;
 }
-div.information{
+
+div.information {
     padding: 0 20px 20px 20px;
 }
-div.network{
+
+div.network {
     display: flex;
     justify-content: space-between;
     width: 58%;
     align-items: center;
     padding-top: 10px;
 }
-div.balance{
+
+div.balance {
     display: flex;
     justify-content: space-between;
     width: 60%;
     align-items: center;
     padding-top: 10px;
 }
-div.cart{
+
+div.cart {
     display: flex;
     justify-content: space-between;
     width: 40%;
     align-items: center;
 }
-i.fa-sort-down, i.fa-ellipsis{
+
+i.fa-sort-down,
+i.fa-ellipsis {
     color: white;
     font-size: 25px;
     margin-top: -8px;
 }
-div.grevent{
+
+div.grevent {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -242,15 +288,18 @@ div.grevent{
     height: 70px;
     font-weight: 400;
 }
-img[alt="poster"]{
+
+img[alt="poster"] {
     width: 50px;
     height: 50px;
     border-radius: 9999px;
     border: 3px solid #2B9B9E;
 }
-div.information hr{
-    transform: scale(1.15,1)
+
+div.information hr {
+    transform: scale(1.15, 1)
 }
+
 div.toppost {
     display: flex;
     width: 100%;
@@ -264,67 +313,84 @@ div.toppost {
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
 }
-img[alt="truepost"]{
+
+img[alt="truepost"] {
     width: 100%;
 }
+
 div.postinfo {
-    background-color:  rgb(7, 23, 46);
+    background-color: rgb(7, 23, 46);
     margin-top: -5px;
     height: 100px;
     /* border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px; */
 }
-i.fa-comment, i.fa-share, i.fa-star, i.fa-heart{
+
+i.fa-comment,
+i.fa-share,
+i.fa-star,
+i.fa-heart {
     font-size: 20px;
     transform: scale(0.8, 0.9)
 }
-i.fa-comment, i.fa-share, i.fa-star{
+
+i.fa-comment,
+i.fa-share,
+i.fa-star {
     color: white;
 }
 
-div.reactions{
+div.reactions {
     display: flex;
     justify-content: space-between;
     margin-left: 12px;
     margin-right: 12px;
 }
-i.fa-heart{
+
+i.fa-heart {
     color: #B52A3E;
 }
-div.reactions div{
+
+div.reactions div {
     margin-top: 7px;
 }
-div.reactleft{
+
+div.reactleft {
     display: flex;
     justify-content: space-between;
     width: 90px;
 }
-img[alt="whlikd"]{
+
+img[alt="whlikd"] {
     width: 40px;
     height: 40px;
     border-radius: 9999px;
     margin-left: 10px;
-
 }
-div.likess{
+
+div.likess {
     display: flex;
     justify-content: space-between;
     width: 320px;
 }
-div.namlikd{
+
+div.namlikd {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
 }
-div.namlikd span:first-child{
+
+div.namlikd span:first-child {
     color: rgb(136, 136, 136);
     font-size: 13px;
 }
-div.namlikd span:last-child{
+
+div.namlikd span:last-child {
     color: rgba(128, 128, 128, 0.568);
     font-size: 12px;
 }
-div.comment{
+
+div.comment {
     background: #052550;
     height: 80px;
     display: flex;
@@ -334,11 +400,13 @@ div.comment{
     border-bottom-right-radius: 10px;
     margin-bottom: 35px;
 }
-i.fa-cart-arrow-down{
+
+i.fa-cart-arrow-down {
     color: #2B9B9E;
     font-size: 18px;
 }
-input.comm{
+
+input.comm {
     background: #273A53;
     width: 70%;
     color: white;
@@ -349,25 +417,30 @@ input.comm{
     border-radius: 5px;
     outline: none;
 }
-button.post{
+
+button.post {
     background: #052550;
     border: none;
     outline: none;
     color: #2B9B9E;
     cursor: pointer;
     padding: 10px;
-}   
-::placeholder{
+}
+
+::placeholder {
     color: rgb(180, 180, 180);
 }
-div.topping{
-    width: 200px; 
+
+div.topping {
+    width: 200px;
 }
-img.lastlogo{
+
+img.lastlogo {
     width: 200px;
     height: 50px;
 }
-div.right{
+
+div.right {
     width: 280px;
     position: fixed;
     right: 1%;
@@ -377,11 +450,14 @@ div.right{
     align-items: center;
     flex-direction: column;
 }
-div.right div:not(.social), div.right ul{
+
+div.right div:not(.social),
+div.right ul {
     padding-top: 20px;
     padding-bottom: 20px;
 }
-div.suggestion{
+
+div.suggestion {
     color: white;
     text-align: center;
     background-color: #265B76;
@@ -392,13 +468,16 @@ div.suggestion{
     height: 100px;
     border-radius: 10px;
 }
-div.suggestion span{
+
+div.suggestion span {
     line-height: 25px;
 }
-div.issues{
+
+div.issues {
     color: white;
 }
-ul.company{
+
+ul.company {
     display: flex;
     color: rgba(255, 255, 255, 0.61);
     list-style: none;
@@ -406,46 +485,59 @@ ul.company{
     width: 100%;
     font-size: 10px;
 }
-ul.company li{
+
+ul.company li {
     padding-left: 5px;
     padding-right: 5px;
 }
-div.social{
+
+div.social {
     display: flex;
     justify-content: center;
 }
-div.social i{
+
+div.social i {
     padding-left: 5px;
     padding-right: 5px;
 }
-div.footer{
+
+div.footer {
     color: rgba(255, 255, 255, 0.61);
 }
-div.leftProfiles{
+
+div.leftProfiles {
     width: 280px;
     top: 100px;
     left: 15px;
     position: absolute;
     z-index: 40;
 }
-div.explorefashion{
+
+div.explorefashion {
     z-index: 20;
     position: relative;
     margin-right: 30px;
     width: 70%;
     margin-bottom: 40px;
 }
-div.fashion{
+
+div.fashion {
     border-radius: 15px;
     background: #112645;
     margin-bottom: 20px;
 }
-div.men, div.women, div.kid{
+
+div.men,
+div.women,
+div.kid {
     flex-direction: column;
     display: flex;
     width: 100%;
 }
-div.men span, div.women span, div.kid span{
+
+div.men span,
+div.women span,
+div.kid span {
     color: white;
     text-align: center;
     font-size: 15px;
@@ -453,33 +545,39 @@ div.men span, div.women span, div.kid span{
     padding-bottom: 16px;
     width: 100%;
 }
-div.picture{
+
+div.picture {
     display: block;
     margin-left: auto;
     margin-right: auto;
 }
-img.man{
+
+img.man {
     height: 236px;
     padding-left: 5px;
     padding-right: 5px;
     border-radius: 10px;
 }
-img.kid{
+
+img.kid {
     height: 195px;
     padding-left: 5px;
     padding-right: 5px;
     border-radius: 10px;
 }
-img.woman{
+
+img.woman {
     height: 268px;
     padding-left: 5px;
     padding-right: 5px;
     border-radius: 10px;
 }
-div.kid{
+
+div.kid {
     padding-bottom: 35px;
 }
-div.bottom{
+
+div.bottom {
     background-color: #112645;
     display: flex;
     justify-content: space-around;
@@ -488,13 +586,15 @@ div.bottom{
     width: 100%;
     flex-direction: column;
 }
-div.bottomer{
+
+div.bottomer {
     display: flex;
     justify-content: space-between;
     align-items: center;
     height: 280px;
     width: 75%;
 }
+
 div.container {
     position: absolute;
     width: 100%;
@@ -504,58 +604,66 @@ div.container {
     flex-direction: column;
     align-items: flex-end;
 }
-div.bottom div.header{
+
+div.bottom div.header {
     color: white;
     padding-bottom: 20px;
     font-size: 20px;
     font-weight: 400px;
 }
-div.topic{
+
+div.topic {
     display: flex;
     justify-content: space-between;
     width: 80vh;
 }
-div.topic div.informat{
+
+div.topic div.informat {
     /* width: 280px; */
     display: flex;
     flex-direction: column;
     height: 120px;
-
 }
-div.descriptioners{
+
+div.descriptioners {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    font-weight:200;
+    font-weight: 200;
     font-size: 15px;
     color: rgba(255, 255, 255, 0.62);
     width: 191px;
-    
 }
-div.informat div.company{
+
+div.informat div.company {
     display: flex;
     flex-direction: column;
 }
-div.informat div a{
+
+div.informat div a {
     color: rgba(255, 255, 255, 0.62);
     text-decoration: none;
 }
-div.informat div a:hover{
+
+div.informat div a:hover {
     text-decoration: underline;
     color: #2063C6;
 }
-hr.companyDivide{
+
+hr.companyDivide {
     width: 76%;
     color: gray;
 }
-div.hotline{
+
+div.hotline {
     display: flex;
     justify-content: space-between;
     width: 76%;
     padding-top: 60px;
     padding-bottom: 60px;
 }
-div.hotline div.about{
+
+div.hotline div.about {
     color: white;
     display: flex;
     justify-content: space-between;
@@ -563,40 +671,50 @@ div.hotline div.about{
     font-weight: 300;
     font-size: 15px;
 }
-div.hotline div.icon{
+
+div.hotline div.icon {
     color: black;
     font-size: 20px;
 }
-div.icon i, div.social i{
+
+div.icon i,
+div.social i {
     cursor: pointer;
     color: black;
     font-size: 23px;
     padding-left: 5px;
-    padding-right: 5px; 
+    padding-right: 5px;
 }
-i.fa-facebook:hover{
+
+i.fa-facebook:hover {
     color: #097eeb;
 }
-i.fa-instagram:hover{
+
+i.fa-instagram:hover {
     color: #c935b0;
 }
-i.fa-linkedin-in:hover{
+
+i.fa-linkedin-in:hover {
     color: #0E76A8;
 }
-i.fa-github:hover{
+
+i.fa-github:hover {
     color: #d8d8d8;
 }
-span.footer{
+
+span.footer {
     color: rgba(255, 255, 255, 0.66);
     font-size: 12px;
     font-weight: 100;
     text-align: center;
     padding-bottom: 25px;
 }
-div.about span{
+
+div.about span {
     cursor: pointer;
 }
-div.truechat-container{
+
+div.truechat-container {
     position: absolute;
     top: 100px;
     display: flex;
@@ -604,68 +722,87 @@ div.truechat-container{
     align-items: center;
     width: 100%;
 }
-div.chat{
+
+div.chat {
     display: flex;
     justify-content: center;
     align-items: center;
     width: 90%;
     height: 80vh;
-    box-shadow: 5px 5px 50px rgba(0, 0, 0, 0.25);
 }
-div.chat div.chaterinfo{
+
+div.chat div.chaterinfo {
     background: #121F32;
     border-radius: 7px 0px 0px 7px;
-    width: 33%;
+    width: 22%;
+    left: 80px;
     height: inherit;
+    position: fixed;
+    overflow-y: hidden;
+    overflow-y: scroll;
 }
-div.chat div.truechat{
+
+div.chat div.truechat {
     background: #243954;
     height: inherit;
-    width: 66%;
+    width: 50%;
 }
-div.chat div.tochatinfo{
+
+div.chat div.tochatinfo {
     background: #121F32;
     height: inherit;
-    width: 33%;
+    width: 20%;
+    position: fixed;
+    right: 45px;
     border-radius: 0px 7px 7px 0px;
 }
-div.chatterinfo{
+
+div.chatterinfo {
     width: 100%;
 }
-div.peoplechat{
+
+div.peoplechat {
     width: 55%;
     padding-top: 20px;
 }
-div.chatterprofile{
+
+div.chatterprofile {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 0 25px 0 25px;
     cursor: pointer;
 }
-div.peoplechat{
+
+div.peoplechat {
     justify-content: flex-start;
 }
-i.fa-pen{
+
+i.fa-pen {
     color: #A8A8A8;
 }
-div.peoplechat div.description span:first-child{
+
+div.peoplechat div.description span:first-child {
     font-size: 14px;
     color: rgba(255, 255, 255, 0.87);
 }
-div.peoplechat div.description span:last-child{
+
+div.peoplechat div.description span:last-child {
     font-size: 11px;
 }
-div.peoplechat div.description{
+
+div.peoplechat div.description {
     padding-left: 13px;
     justify-content: space-around;
 }
-i.search{
+
+i.search {
     background: none;
     font-size: 12px;
     padding: 0 0 0 15px;
 }
-div.searcher{
+
+div.searcher {
     background: #1F2E43;
     display: flex;
     align-items: center;
@@ -677,7 +814,8 @@ div.searcher{
     border-radius: 22.5px;
     height: 35px;
 }
-input[type="search"]:nth-child(2){
+
+input[type="search"]:nth-child(2) {
     background: inherit;
     border: none;
     outline: none;
@@ -686,37 +824,45 @@ input[type="search"]:nth-child(2){
     transition: all 0.3s linear;
     border-radius: 53.5px;
 }
-input[type="search"]:nth-child(2):focus{
+
+input[type="search"]:nth-child(2):focus {
     transform: translateX(-25px);
     width: 100%;
 }
-div.teams{
+
+div.teams {
     width: 80%;
     margin-left: auto;
     margin-right: auto;
 }
-div.teams{
+
+div.teams {
     color: #889499;
     cursor: pointer;
     text-decoration: none;
 }
-div.teams span{
+
+div.teams span {
     margin-left: 10px;
 }
-div.teams i{
+
+div.teams i {
     font-size: 20px;
 }
-div#teameg div:hover{
+
+div#teameg div:hover {
     background: #12234b;
 }
-div#teameg{
+
+div#teameg {
     margin-left: 10px;
     color: white;
     margin-top: 8px;
-    line-height: 40px;
+    line-height: 25px;
     font-size: 15px;
 }
-div#teameg div{
+
+div#teameg div {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -724,9 +870,10 @@ div#teameg div{
     cursor: pointer;
     padding: 5px 10px 5px 10px;
     border-radius: 6px;
-    margin: 8px 0 8px 0;
+    margin: 5px 0 5px 0;
 }
-span.messageN{
+
+span.messageN {
     background: #154893;
     width: 20px;
     height: 20px;
@@ -736,42 +883,48 @@ span.messageN{
     color: white;
     align-items: center;
 }
-@media screen and (max-width:1472px){
-    img.man2{
+
+@media screen and (max-width:1472px) {
+    img.man2 {
         display: none;
     }
-    img.woman{
+    img.woman {
         height: 250px;
     }
-    img.man{
+    img.man {
         height: 205px;
     }
-    img.kid{
+    img.kid {
         height: 165px;
     }
 }
-@media screen and (max-width: 1100px){
-    div.hotline div.about{
+
+@media screen and (max-width: 1100px) {
+    div.hotline div.about {
         width: 80%;
     }
-    div.container{
+    div.container {
         width: 100%;
         align-items: center;
     }
-    div.explorefashion{
+    div.explorefashion {
         width: 100%;
         position: static;
         right: 0;
         margin-right: 0;
     }
-    img.logo, img.logos, div.searpro, div.leftProfile, div.right{
+    img.logo,
+    img.logos,
+    div.searpro,
+    div.leftProfile,
+    div.right {
         display: none;
     }
-    div.navcenter{
+    div.navcenter {
         width: 100%;
         justify-content: center;
     }
-    div.icon{
+    div.icon {
         position: absolute;
         bottom: 95px;
         right: -38px;
@@ -779,31 +932,31 @@ span.messageN{
         display: flex;
         justify-content: flex-start;
     }
-    div.center{
+    div.center {
         width: 80%;
     }
-    div.hotline div.icon{
+    div.hotline div.icon {
         position: absolute;
         bottom: 95px;
         right: 10px;
     }
-    div.topic{
+    div.topic {
         width: 100%;
     }
-    img.man{
+    img.man {
         width: 100%;
         min-width: 50%;
         height: auto;
     }
-    img.woman{
+    img.woman {
         width: 100%;
         height: auto;
     }
-    img.kid{
+    img.kid {
         width: 100%;
         height: auto;
     }
-    img.man2{
+    img.man2 {
         display: block;
     }
 }
