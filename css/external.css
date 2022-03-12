@@ -168,7 +168,7 @@ div.leftProfile {
     width: 270px;
     height: 580px;
     position: fixed;
-    left: 1%;
+    left: 8%;
     z-index: 40;
 }
 
@@ -443,7 +443,7 @@ img.lastlogo {
 div.right {
     width: 280px;
     position: fixed;
-    right: 1%;
+    right: 8%;
     height: 360px;
     display: flex;
     justify-content: center;
