@@ -575,8 +575,6 @@ div.icon i, div.social i{
 }
 i.fa-facebook:hover{
     color: #097eeb;
-    background-color: white;
-    border-radius: 8000px;
 }
 i.fa-instagram:hover{
     color: #c935b0;
@@ -585,9 +583,7 @@ i.fa-linkedin-in:hover{
     color: #0E76A8;
 }
 i.fa-github:hover{
-    border-radius: 8000px;
     color: #d8d8d8;
-    background: gray;
 }
 span.footer{
     color: rgba(255, 255, 255, 0.66);
