@@ -593,8 +593,6 @@ span.footer{
     padding-bottom: 25px;
 }
 div.about span{
-    margin-left: 20px;
-    margin-right: 20px;
     cursor: pointer;
 }
 @media screen and (max-width:1472px){
@@ -612,10 +610,18 @@ div.about span{
     }
 }
 @media screen and (max-width: 1100px){
+    div.hotline div.about{
+        width: 80%;
+    }
+    div.container{
+        width: 100%;
+        align-items: center;
+    }
     div.explorefashion{
         width: 100%;
-        padding: 20px;
         position: static;
+        right: 0;
+        margin-right: 0;
     }
     img.logo, img.logos, div.searpro, div.leftProfile, div.right{
         display: none;
@@ -623,6 +629,14 @@ div.about span{
     div.navcenter{
         width: 100%;
         justify-content: center;
+    }
+    div.icon{
+        position: absolute;
+        bottom: 95px;
+        right: -38px;
+        width: 30%;
+        display: flex;
+        justify-content: flex-start;
     }
     div.center{
         width: 80%;
