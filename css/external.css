@@ -4,6 +4,19 @@
     box-sizing: border-box;
     font-family: sans-serif;
 }
+::-webkit-scrollbar{
+    background-color: #182539;
+    width: 11px;
+    border-radius: 10px;
+}
+::-webkit-scrollbar-thumb:hover{
+    background-color: #495668;
+}
+::-webkit-scrollbar-thumb{
+    background-color: #364458;
+    border-radius: 10px;
+    width: 2px;
+}
 body{
     background: #0e1a2b;
     overflow-y: scroll;
@@ -466,6 +479,128 @@ img.woman{
 div.kid{
     padding-bottom: 35px;
 }
+div.bottom{
+    background-color: #112645;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 400px;
+    width: 100%;
+    flex-direction: column;
+}
+div.bottomer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 280px;
+    width: 75%;
+}
+div.container {
+    position: absolute;
+    width: 100%;
+    z-index: 20;
+    top: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+div.bottom div.header{
+    color: white;
+    padding-bottom: 20px;
+    font-size: 20px;
+    font-weight: 400px;
+}
+div.topic{
+    display: flex;
+    justify-content: space-between;
+    width: 80vh;
+}
+div.topic div.informat{
+    /* width: 280px; */
+    display: flex;
+    flex-direction: column;
+    height: 120px;
+
+}
+div.descriptioners{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    font-weight:200;
+    font-size: 15px;
+    color: rgba(255, 255, 255, 0.62);
+    width: 191px;
+    
+}
+div.informat div.company{
+    display: flex;
+    flex-direction: column;
+}
+div.informat div a{
+    color: rgba(255, 255, 255, 0.62);
+    text-decoration: none;
+}
+div.informat div a:hover{
+    text-decoration: underline;
+    color: #2063C6;
+}
+hr.companyDivide{
+    width: 76%;
+    color: gray;
+}
+div.hotline{
+    display: flex;
+    justify-content: space-between;
+    width: 76%;
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+div.hotline div.about{
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    width: 45%;
+    font-weight: 300;
+    font-size: 15px;
+}
+div.hotline div.icon{
+    color: black;
+    font-size: 20px;
+    width: 12%;
+}
+div.icon i, div.social i{
+    cursor: pointer;
+    color: black;
+    font-size: 23px;
+}
+i.fa-facebook:hover{
+    color: #097eeb;
+    background-color: white;
+    border-radius: 8000px;
+}
+i.fa-instagram:hover{
+    color: #c935b0;
+}
+i.fa-linkedin-in:hover{
+    color: #0E76A8;
+}
+i.fa-github:hover{
+    border-radius: 8000px;
+    color: #d8d8d8;
+    background: gray;
+}
+span.footer{
+    color: rgba(255, 255, 255, 0.66);
+    font-size: 12px;
+    font-weight: 100;
+    text-align: center;
+    padding-bottom: 25px;
+}
+div.about span{
+    margin-left: 20px;
+    margin-right: 20px;
+    cursor: pointer;
+}
 @media screen and (max-width:1472px){
     img.man2{
         display: none;
@@ -520,17 +655,4 @@ div.kid{
     img.man2{
         display: block;
     }
-}
-::-webkit-scrollbar{
-    background-color: #182539;
-    width: 11px;
-    border-radius: 10px;
-}
-::-webkit-scrollbar-thumb:hover{
-    background-color: #495668;
-}
-::-webkit-scrollbar-thumb{
-    background-color: #364458;
-    border-radius: 10px;
-    width: 2px;
 }
