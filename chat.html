@@ -5,6 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/external.css">
+    <link rel="stylesheet" href="../wui projects/fontawesome-free-6.0.0-web/css/all.css">
+    <link rel="stylesheet" href="../wui projects/fontawesome-free-6.0.0-web/css/all.min.css">
     <script src="https://kit.fontawesome.com/954941076f.js" crossorigin="anonymous"></script>
     <title>Document</title>
     <style>
@@ -46,12 +48,13 @@ div.chatterinfo{
 }
 div.peoplechat{
     width: 55%;
+    padding-top: 20px;
 }
 div.chatterprofile{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin: 10px;
+    padding: 0 25px 0 25px;
     cursor: pointer;
 }
 div.peoplechat{
@@ -82,7 +85,9 @@ div.searcher{
     align-items: center;
     margin-left: auto;
     margin-right: auto;
-    width: 80%;
+    width: 83%;
+    margin-top: 20px;
+    margin-bottom: 20px;
     border-radius: 22.5px;
     height: 35px;
 }
@@ -93,11 +98,56 @@ input[type="search"]:nth-child(2){
     color: white;
     width: 80%;
     transition: all 0.3s linear;
-    border-radius: 12.5px;
+    border-radius: 53.5px;
 }
 input[type="search"]:nth-child(2):focus{
     transform: translateX(-25px);
     width: 100%;
+}
+div.teams{
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+div.teams{
+    color: #889499;
+    cursor: pointer;
+    text-decoration: none;
+}
+div.teams span{
+    margin-left: 10px;
+}
+div.teams i{
+    font-size: 20px;
+}
+div#teameg div:hover{
+    background: #12234b;
+}
+div#teameg{
+    margin-left: 10px;
+    color: white;
+    margin-top: 8px;
+    line-height: 40px;
+    font-size: 15px;
+}
+div#teameg div{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    cursor: pointer;
+    padding: 5px 10px 5px 10px;
+    border-radius: 6px;
+    margin: 8px 0 8px 0;
+}
+span.messageN{
+    background: #154893;
+    width: 20px;
+    height: 20px;
+    border-radius: 9999px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
     </style>
 </head>
@@ -128,9 +178,26 @@ input[type="search"]:nth-child(2):focus{
                     </div>
                     <i class="fa-solid fa-pen"></i>
                 </div>
-                <div class="searcher"><i class="fa-solid fa-magnifying-glass search"></i><input type="search" placeholder="Search partners"></div>
+                <div class="searcher"><i class="fa-solid fa-magnifying-glass search"></i><input type="search" placeholder="Search partners..."></div>
+                <div class="teams">
+                       <i class="fas fa-caret-down"></i>
+                       <span>Your Teams</span>
+                       <div id="teameg">
+                            <div><span>Downtown</span><span class="messageN">5</span></div>
+                            <div><span>Chique</span><span class=messageN>3</div>
+                       </div>
+                </div>
+                <div class="teams">
+                    <i class="fas fa-caret-down"></i>
+                    <span>Clients and Partners</span>
+                    <div id="teameg">
+                         <div>
+                             
+                         </div>
+                    </div>
+             </div>
             </div>
-            <div class="truechat">sdf</div>
+            <div class="truechat">klsdf</div>
             <div class="tochatinfo">sdfds</div>
         </div>
     </div>
