@@ -729,6 +729,7 @@ div.chat {
     align-items: center;
     width: 90%;
     height: 80vh;
+    position: relative;
 }
 
 div.chat div.chaterinfo {
@@ -737,7 +738,6 @@ div.chat div.chaterinfo {
     width: 22%;
     left: 80px;
     height: inherit;
-    position: fixed;
     overflow-y: hidden;
     overflow-y: scroll;
 }
