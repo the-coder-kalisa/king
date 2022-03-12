@@ -7,7 +7,7 @@
 
 ::-webkit-scrollbar {
     background-color: #182539;
-    width: 11px;
+    width: 8px;
     border-radius: 10px;
 }
 
@@ -734,25 +734,22 @@ div.chat {
 div.chat div.chaterinfo {
     background: #121F32;
     border-radius: 7px 0px 0px 7px;
-    width: 22%;
-    left: 80px;
+    width: 28%;
     height: inherit;
-    overflow-y: hidden;
     overflow-y: scroll;
 }
 
 div.chat div.truechat {
     background: #243954;
     height: inherit;
+    overflow-y: scroll;
     width: 50%;
 }
 
 div.chat div.tochatinfo {
     background: #121F32;
     height: inherit;
-    width: 20%;
-    position: fixed;
-    right: 45px;
+    width: 28%;
     border-radius: 0px 7px 7px 0px;
 }
 
