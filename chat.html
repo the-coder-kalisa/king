@@ -29,9 +29,6 @@ div.chat div.chaterinfo{
     border-radius: 7px 0px 0px 7px;
     width: 33%;
     height: inherit;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
 }
 div.chat div.truechat{
     background: #243954;
@@ -53,6 +50,9 @@ div.peoplechat{
 div.chatterprofile{
     display: flex;
     justify-content: space-between;
+    align-items: center;
+    margin: 10px;
+    cursor: pointer;
 }
 div.peoplechat{
     justify-content: flex-start;
@@ -73,12 +73,30 @@ div.peoplechat div.description{
 }
 i.search{
     background: none;
+    font-size: 12px;
+    padding: 0 0 0 15px;
 }
 div.searcher{
     background: #1F2E43;
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+    border-radius: 22.5px;
+    height: 35px;
 }
-input.searcher{
-    background: #1F2E43;
+input[type="search"]:nth-child(2){
+    background: inherit;
+    border: none;
+    outline: none;
+    color: white;
+    width: 80%;
+    transition: all 0.3s linear;
+    border-radius: 12.5px;
+}
+input[type="search"]:nth-child(2):focus{
+    transform: translateX(-25px)
 }
     </style>
 </head>
@@ -100,8 +118,7 @@ input.searcher{
         </div>
     </div>
     <div class="truechat-container">
-6
-        <div class="chat">
+      <div class="chat">
             <div class="chaterinfo">
                 <div class="chatterprofile">
                     <div class="people peoplechat">
@@ -110,7 +127,7 @@ input.searcher{
                     </div>
                     <i class="fa-solid fa-pen"></i>
                 </div>
-                <div class="searcher"><i class="fa-solid fa-magnifying-glass search"></i><input type="search" placeholder="Search..."></div>
+                <div class="searcher"><i class="fa-solid fa-magnifying-glass search"></i><input type="search" placeholder="Search partners"></div>
             </div>
             <div class="truechat">sdf</div>
             <div class="tochatinfo">sdfds</div>
