@@ -30,8 +30,8 @@ div.chat div.chaterinfo{
     width: 33%;
     height: inherit;
     display: flex;
-    justify-content: center;
-    align-items: flex-start;
+    flex-direction: column;
+    align-items: center;
 }
 div.chat div.truechat{
     background: #243954;
@@ -57,7 +57,7 @@ div.chatterprofile{
 div.peoplechat{
     justify-content: flex-start;
 }
-i.fa-pencil{
+i.fa-pen{
     color: #A8A8A8;
 }
 div.peoplechat div.description span:first-child{
@@ -70,6 +70,15 @@ div.peoplechat div.description span:last-child{
 div.peoplechat div.description{
     padding-left: 13px;
     justify-content: space-around;
+}
+i.search{
+    background: none;
+}
+div.searcher{
+    background: #1F2E43;
+}
+input.searcher{
+    background: #1F2E43;
 }
     </style>
 </head>
@@ -91,7 +100,7 @@ div.peoplechat div.description{
         </div>
     </div>
     <div class="truechat-container">
-
+6
         <div class="chat">
             <div class="chaterinfo">
                 <div class="chatterprofile">
@@ -99,8 +108,9 @@ div.peoplechat div.description{
                         <img src="./images/profile.jpg" alt="profile" class="">
                         <div class="description"><span>Giovanni.the.coder</span><span>Fashion Assistant</span></div>
                     </div>
-                    <i class="fa-regular fa-pen"></i>
+                    <i class="fa-solid fa-pen"></i>
                 </div>
+                <div class="searcher"><i class="fa-solid fa-magnifying-glass search"></i><input type="search" placeholder="Search..."></div>
             </div>
             <div class="truechat">sdf</div>
             <div class="tochatinfo">sdfds</div>
