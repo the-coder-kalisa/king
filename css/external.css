@@ -729,7 +729,6 @@ div.chat {
     align-items: center;
     width: 90%;
     height: 80vh;
-    position: relative;
 }
 
 div.chat div.chaterinfo {
