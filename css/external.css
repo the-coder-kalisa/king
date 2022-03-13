@@ -954,7 +954,7 @@ img.avtarman {
 
 div.chattername {
     background: #15273E;
-    width: 41.9%;
+    width: 42%;
     position: fixed;
     display: flex;
     justify-content: flex-start;
@@ -1062,7 +1062,7 @@ div.sendMessage input {
     outline: none;
     color: white;
     padding: 10px;
-    width: 24vh;
+    width: 110px;
 }
 
 div.sendMessage i {
@@ -1130,6 +1130,7 @@ div.chattype i {
     padding: 10px 11.6px 10px 11.6px;
     border-radius: 9999px;
     margin-bottom: 10px;
+    cursor: auto;
 }
 
 div.chattype div.cameras i {
@@ -1155,10 +1156,6 @@ div.chattype div {
     flex-direction: column;
     align-items: center;
     height: 100px;
-}
-
-div.chattype div:not(.active) {
-    cursor: pointer;
 }
 
 div.chattype div.active i {
@@ -1244,6 +1241,15 @@ span.favoritei {
 }
 
 @media screen and (max-width: 1100px) {
+    div.chaterinfo {
+        display: none;
+    }
+    div.chattername {
+        width: 44.2%;
+    }
+    div.chat div.tochatinfo {
+        display: none;
+    }
     div.hotline div.about {
         width: 80%;
     }
