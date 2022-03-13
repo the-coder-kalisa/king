@@ -1120,8 +1120,8 @@ i.fa-video-camera {
     color: #079707c7;
 }
 
-i.fa-mobile-alt {
-    color: rgba(168, 153, 153, 0.527);
+i.fa-phone {
+    color: #134ca0;
 }
 
 div.chattype i {
@@ -1136,16 +1136,17 @@ div.chattype div.cameras i {
     padding: 10px 8px 10px 8px;
 }
 
-div.chattype div:hover:not(.cameras) i {
-    background: #1a1e6e;
+div.chattype div:hover:not(.cameras) i:not(.chating) {
+    background: #0d104e;
 }
 
 div.cameras:hover i {
-    background: #2d8f2d59;
+    background: #07970779;
 }
 
 i.chating {
     color: #134ca0;
+    font-size: 10px;
 }
 
 div.chattype div {
@@ -1157,7 +1158,7 @@ div.chattype div {
     height: 100px;
 }
 
-div.chattype div.active i {
+div.chat div.chattype div.active i {
     background: #1a1e6e;
 }
 
