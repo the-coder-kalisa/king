@@ -1157,7 +1157,15 @@ div.chattype div {
     height: 100px;
 }
 
-div.chattype div.active i {
+div.chattype div:not(.active) {
+    cursor: pointer;
+}
+
+div.chattype div:not(.active) i {
+    cursor: pointer;
+}
+
+.chattype div.active i {
     background: #0d115a;
 }
 
