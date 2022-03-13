@@ -164,11 +164,10 @@ div.body {
 
 div.leftProfile {
     background: #112645;
-    /* background: #273A53; */
     width: 270px;
     height: 580px;
     position: fixed;
-    left: 8%;
+    left: 2%;
     z-index: 40;
 }
 
@@ -331,13 +330,22 @@ i.fa-share,
 i.fa-star,
 i.fa-heart {
     font-size: 20px;
-    transform: scale(0.8, 0.9)
+    transform: scale(0.8, 0.9);
+    cursor: pointer;
+}
+
+i.fa-star:hover {
+    color: rgba(182, 182, 3, 0.685);
 }
 
 i.fa-comment,
 i.fa-share,
 i.fa-star {
     color: white;
+}
+
+i.fa-heart {
+    color: rgba(253, 179, 179, 0.555);
 }
 
 div.reactions {
@@ -347,7 +355,7 @@ div.reactions {
     margin-right: 12px;
 }
 
-i.fa-heart {
+i.fa-heart:hover {
     color: #B52A3E;
 }
 
@@ -443,7 +451,7 @@ img.lastlogo {
 div.right {
     width: 280px;
     position: fixed;
-    right: 8%;
+    right: 2%;
     height: 360px;
     display: flex;
     justify-content: center;
@@ -506,9 +514,7 @@ div.footer {
 }
 
 div.leftProfiles {
-    width: 280px;
     top: 100px;
-    left: 15px;
     position: absolute;
     z-index: 40;
 }
@@ -736,6 +742,7 @@ div.chat div.chaterinfo {
     border-radius: 7px 0px 0px 7px;
     width: 28%;
     height: inherit;
+    overflow-x: hidden;
     overflow-y: scroll;
 }
 
@@ -743,6 +750,7 @@ div.chat div.truechat {
     background: #243954;
     height: inherit;
     overflow-y: scroll;
+    overflow-x: hidden;
     width: 50%;
 }
 
@@ -751,10 +759,10 @@ div.chat div.tochatinfo {
     height: inherit;
     width: 28%;
     border-radius: 0px 7px 7px 0px;
-}
-
-div.chatterinfo {
-    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
 }
 
 div.peoplechat {
@@ -879,6 +887,342 @@ span.messageN {
     color: white;
     align-items: center;
 }
+
+
+/*this is option remember
+*/
+
+img.avatar {
+    width: 7vh;
+    height: 7vh;
+    border-radius: 99999px;
+    margin-right: 10px;
+}
+
+div.message_address {
+    display: flex;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    margin-bottom: 33px;
+    padding: 8px 20px 8px 20px;
+    width: 100%;
+}
+
+div.message_address:hover {
+    background: #12234b;
+}
+
+div.messengerinfo {
+    display: flex;
+    justify-content: space-between;
+}
+
+div.messengerinfo span:first-child {
+    width: 50%;
+}
+
+div.namt {
+    color: rgba(255, 255, 255, 0.863);
+    font-weight: 300;
+    font-size: 14px;
+    margin-bottom: 5px;
+}
+
+span.time {
+    font-size: 10px;
+    color: rgba(128, 128, 128, 0.918);
+}
+
+span.show {
+    color: rgb(155, 155, 155);
+    font-size: 13px;
+}
+
+div.truechat {
+    background-color: #243954;
+    position: relative;
+    font-size: 13.5px;
+}
+
+img.avtarman {
+    width: 40px;
+    height: 40px;
+    margin-right: 8px;
+}
+
+div.chattername {
+    background: #15273E;
+    width: 41.9%;
+    position: fixed;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    color: white;
+    height: 66px;
+    margin-top: -1px;
+}
+
+img.avarwoman {
+    width: 44px;
+    height: 44px;
+}
+
+div.messengers {
+    margin-top: 31px;
+    display: flex;
+    align-items: flex-end;
+}
+
+div.messages {
+    background: #2D4A6C;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40%;
+    height: fit-content;
+    padding: 15px 13px 15px 13px;
+    line-height: 23px;
+    color: white;
+}
+
+div.response {
+    background: rgba(13, 86, 86, 0.63);
+    border-radius: 10px;
+    display: flex;
+    padding: 10px 5px;
+    justify-content: center;
+    align-items: center;
+    width: 30%;
+    height: fit-content;
+    color: white;
+    margin-right: 10px;
+}
+
+div.hello {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: flex-end;
+}
+
+img.respimg {
+    width: 35px;
+    height: 35px;
+}
+
+div.topper {
+    margin-top: 80px;
+}
+
+div.today {
+    position: absolute;
+    color: rgb(206, 206, 206);
+    text-transform: capitalize;
+    margin-top: -7px;
+    left: 45.5%;
+    display: flex;
+    justify-content: space-between;
+    width: 8.5%;
+}
+
+div.hrs {
+    display: flex;
+    justify-content: space-between;
+    margin: 35px 50px 0 50px;
+}
+
+hr.myddi,
+hr.mydd {
+    width: 42.4%;
+}
+
+hr.lastdivide {
+    margin: 13px 48px 0 50px;
+    width: 84%;
+}
+
+div.sendMessage {
+    display: flex;
+    justify-content: space-between;
+    margin: 16px auto 28px auto;
+    width: 80%;
+    padding-left: 5px;
+    height: 44px;
+    background: #0E2B41;
+    border-radius: 99999px;
+    align-items: center;
+    padding-left: 20px;
+}
+
+div.sendMessage input {
+    background: #0E2B41;
+    border: none;
+    outline: none;
+    color: white;
+    padding: 10px;
+    width: 24vh;
+}
+
+div.sendMessage i {
+    cursor: pointer;
+}
+
+i.fa-microphone {
+    color: rgba(255, 255, 255, 0.733);
+    font-size: 17px;
+}
+
+i.fa-face-smile,
+i.fa-camera {
+    font-size: 18px;
+    padding: 0 5px 0 5px;
+    color: rgba(255, 255, 255, 0.73)
+}
+
+i.fa-paper-plane {
+    color: white;
+    background: #4F7FF0;
+    border-radius: 99999px;
+    padding: 13px;
+    font-size: 15px;
+}
+
+img.avtarinfo {
+    width: 20vh;
+    height: fit-content;
+    display: block;
+    margin: 0 auto;
+}
+
+div.infointro {
+    display: flex;
+    flex-direction: column;
+}
+
+div.infointro {
+    text-align: center;
+}
+
+span.name {
+    color: white;
+    font-weight: 400;
+    font-size: 28px;
+}
+
+span.descriptioning {
+    color: #ACA5A5;
+    padding-top: 10px;
+}
+
+i.fa-video-camera {
+    color: #079707c7;
+}
+
+i.fa-mobile-alt {
+    color: rgba(168, 153, 153, 0.527);
+}
+
+div.chattype i {
+    font-size: 25px;
+    margin: 0 8px 0 8px;
+    padding: 10px 11.6px 10px 11.6px;
+    border-radius: 9999px;
+    margin-bottom: 10px;
+}
+
+div.chattype div.cameras i {
+    padding: 10px 8px 10px 8px;
+}
+
+div.chattype div:hover:not(.cameras) i {
+    background: #1a1e6e;
+}
+
+div.cameras:hover i {
+    background: #2d8f2d59;
+}
+
+i.chating {
+    color: #134ca0;
+}
+
+div.chattype div {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    cursor: pointer;
+    height: 100px;
+}
+
+div.chattype div.active i {
+    background: #1a1e6e;
+}
+
+div.chattype div span {
+    color: rgba(255, 255, 255, 0.747);
+}
+
+div.chattype {
+    display: flex;
+    justify-content: space-around;
+    width: 80%;
+}
+
+div.cameras {
+    border-left: 2.5px solid rgba(128, 128, 128, 0.774);
+    border-right: 2.5px solid rgba(128, 128, 128, 0.774);
+    padding: 0 15px 0 15px;
+}
+
+div.favoriteness {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    width: 100%;
+    color: rgba(209, 209, 209, 0.808);
+    line-height: 50px;
+}
+
+div.favoriteness div {
+    display: flex;
+    align-items: center;
+}
+
+div.favoriteness div i {
+    padding: 0 15px 0 10px;
+    font-size: 20px;
+    color: gray;
+}
+
+div.favoriteness div:hover {
+    background: #14163c;
+}
+
+div.favoriteness div:first-child:hover i {
+    color: #196264;
+}
+
+div.favoriteness div:nth-child(2):hover i {
+    color: #b52a3fd2;
+}
+
+div.favoriteness div:last-child:hover i {
+    color: rgba(255, 255, 255, 0.568);
+}
+
+div.favoriteness div {
+    cursor: pointer;
+}
+
+span.favoritei {
+    padding-left: 6px;
+}
+
+
+/*remeber*/
 
 @media screen and (max-width:1472px) {
     img.man2 {

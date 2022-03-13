@@ -10,162 +10,6 @@
     <link rel="stylesheet" href="../wui projects/fontawesome-free-6.0.0-web/css/all.min.css">
     <script src="https://kit.fontawesome.com/954941076f.js" crossorigin="anonymous"></script>
     <title>Document</title>
-    <style>
-        img.avatar {
-            width: 7vh;
-            height: 7vh;
-            border-radius: 99999px;
-            margin-right: 10px;
-        }
-        
-        div.message_address {
-            display: flex;
-            width: 90%;
-            margin-left: auto;
-            margin-right: auto;
-            margin-top: 20px;
-            margin-bottom: 33px;
-            padding: 8px 20px 8px 20px;
-            width: 100%;
-        }
-        
-        div.message_address:hover {
-            background: #12234b;
-        }
-        
-        div.messengerinfo {
-            display: flex;
-            justify-content: space-between;
-        }
-        
-        div.messengerinfo span:first-child {
-            width: 50%;
-        }
-        
-        div.namt {
-            color: rgba(255, 255, 255, 0.863);
-            font-weight: 300;
-            font-size: 14px;
-            margin-bottom: 5px;
-        }
-        
-        span.time {
-            font-size: 10px;
-            color: rgba(128, 128, 128, 0.918);
-        }
-        
-        span.show {
-            color: rgb(155, 155, 155);
-            font-size: 13px;
-        }
-        
-        div.truechat {
-            background-color: #243954;
-            position: relative;
-            font-size: 13.5px;
-        }
-        
-        img.avtarman {
-            width: 40px;
-            height: 40px;
-            margin-right: 8px;
-        }
-        
-        div.chattername {
-            background: #15273E;
-            width: 41.9%;
-            position: fixed;
-            display: flex;
-            justify-content: flex-start;
-            align-items: center;
-            color: white;
-            height: 66px;
-        }
-        
-        img.avarwoman {
-            width: 44px;
-            height: 44px;
-        }
-        
-        div.messengers {
-            margin-top: 31px;
-            display: flex;
-            align-items: flex-end;
-        }
-        
-        div.messages {
-            background: #2D4A6C;
-            border-radius: 10px;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            width: 300px;
-            height: 50px;
-            padding: 45px 13px 45px 18px;
-            line-height: 23px;
-            color: white;
-        }
-        
-        div.response {
-            background: rgba(13, 86, 86, 0.63);
-            border-radius: 10px;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            width: 213px;
-            height: 46px;
-            color: white;
-            margin-right: 10px;
-        }
-        
-        div.hello {
-            display: flex;
-            flex-direction: row-reverse;
-            align-items: flex-end;
-        }
-        
-        img.respimg {
-            width: 35px;
-            height: 35px;
-        }
-        
-        div.topper {
-            margin-top: 80px;
-        }
-        
-        div.today {
-            position: absolute;
-            color: rgb(206, 206, 206);
-            text-transform: capitalize;
-            top: 412px;
-            left: 45.5%;
-            display: flex;
-            justify-content: space-between;
-            width: 8.5%;
-        }
-        
-        div.hrs {
-            display: flex;
-            justify-content: space-between;
-            margin: 35px 50px 0 50px;
-        }
-        
-        hr.myddi,
-        hr.mydd {
-            width: 42.4%;
-        }
-        
-        hr.lastdivide {
-            margin: 13px 48px 0 50px;
-            width: 84%;
-        }
-        
-        div.sendMessage {
-            width: 90%;
-            margin-right: auto;
-            margin-left: auto;
-        }
-    </style>
 </head>
 
 <body>
@@ -306,14 +150,33 @@
                         </div>
                         <hr class="lastdivide">
                         <div class="sendMessage">
-                            <i class="fa-solid fa-microphone"></i>
-                            <input type="text">
-                            <i class="fa-solid fa-camera"></i>
-                            <i class="fa-regular fa-face-smile"></i>
-                            <i class="fa-solid fa-paper-plane"></i>
+                            <div>
+                                <i class="fa-solid fa-microphone"></i>
+                                <input type="text" placeholder="Send Message" autofocus>
+                            </div>
+                            <div>
+                                <i class="fa-solid fa-camera"></i>
+                                <i class="fa-regular fa-face-smile"></i>
+                                <i class="fa-solid fa-paper-plane"></i>
+                            </div>
                         </div>
                     </div>
-                    <div class="tochatinfo">sdfds</div>
+                    <div class="tochatinfo">
+                        <div class="infointro">
+                            <img src="./images/man4.jpg" class="avatar avtarinfo">
+                            <span class="name">Michael Jordan</span> <span class="descriptioning"><span>Fashion director</span>
+                        </div>
+                        <div class="chattype">
+                            <div class="active"><i class="fa-regular fa-comment chating"></i><span>Chat</span></div>
+                            <div class="cameras"><i class="fa-solid fa-video-camera"></i><span>Video&nbsp;call</span></div>
+                            <div><i class="fa-solid fa-mobile-alt"></i><span>short&nbsp;call</span></div>
+                        </div>
+                        <div class="favoriteness">
+                            <div><i class="fa-solid fa-users"></i><span>Show users</span></div>
+                            <div><i class="fa-solid fa-heart"></i><span class="favoritei">Add to favorite</span></div>
+                            <div><i class="fa-solid fa-user-gear"></i><span>Report Person</span></div>
+                        </div>
+                    </div>
                 </div>
             </div>
 </body>
