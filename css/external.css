@@ -148,7 +148,7 @@ div.truebody {
 }
 
 div.background {
-    background: #C4C4C4;
+    background: #144a7e;
     width: 100%;
     height: 80px;
     border-top-left-radius: 10px;
@@ -272,8 +272,8 @@ div.cart {
 
 i.fa-sort-down,
 i.fa-ellipsis {
-    color: white;
-    font-size: 25px;
+    color: #c3b3b3;
+    font-size: 20px;
     margin-top: -8px;
 }
 
