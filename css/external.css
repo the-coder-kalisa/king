@@ -25,6 +25,9 @@ body {
     background: #0e1a2b;
     overflow-y: scroll;
     overflow-x: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 img.man,
@@ -42,6 +45,7 @@ div.topnav {
     position: fixed;
     z-index: 50;
     height: 73px;
+    top: 0;
 }
 
 img.logo {
@@ -1301,7 +1305,7 @@ img.notification {
 
 div.login {
     display: flex;
-    width: 100%;
+    width: 85%;
     height: 100vh;
     background: inherit;
     display: flex;
@@ -1311,7 +1315,7 @@ div.login {
 
 div.logininfo {
     background: rgba(15, 57, 118, 0.88);
-    width: 35%;
+    width: 50%;
     display: flex;
     height: 90%;
     flex-direction: column;
@@ -1330,7 +1334,7 @@ svg {
 }
 
 div.truelogin {
-    width: 55%;
+    width: 50%;
     height: 90%;
     background: #112645;
 }
@@ -1548,6 +1552,9 @@ div.l div.loginini span a:hover {
 }
 
 @media screen and (max-width: 1100px) {
+    div.logininfo {
+        display: none;
+    }
     div.chaterinfo {
         display: none;
     }
