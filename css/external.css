@@ -148,7 +148,7 @@ div.truebody {
 }
 
 div.background {
-    background: #144a7e;
+    background: #475d72;
     width: 100%;
     height: 80px;
     border-top-left-radius: 10px;
@@ -1277,7 +1277,7 @@ div.now:first-child {
 
 div.now div.messengerinfo span:first-child {
     width: 100%;
-    color: rgb(11 98 226);
+    color: rgb(0 92 227);
 }
 
 div.now div.messengerinfo {
@@ -1285,7 +1285,7 @@ div.now div.messengerinfo {
 }
 
 span.next {
-    background: rgb(11 98 226);
+    background: rgb(18 76 160);
     width: 13px;
     height: 13px;
 }
