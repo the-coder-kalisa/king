@@ -1299,6 +1299,105 @@ img.notification {
     height: 60px;
 }
 
+div.login {
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    background: inherit;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+div.logininfo {
+    background: rgba(15, 57, 118, 0.88);
+    width: 35%;
+    display: flex;
+    height: 90%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+div.logininfo span {
+    color: rgba(255, 255, 255, 0.801);
+    font-size: 20px;
+}
+
+svg {
+    height: 75%;
+    width: 66%;
+}
+
+div.truelogin {
+    width: 55%;
+    height: 90%;
+    background: #112645;
+}
+
+div.logininfo div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+img.login {
+    margin: 0;
+}
+
+div.truelogin h3 {
+    color: white;
+    font-size: 25px;
+    text-align: center;
+    padding-top: 50px;
+}
+
+div.truelogin form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 80%;
+}
+
+div.truelogin form input {
+    outline: none;
+    border: none;
+    margin: 35px 0 35px 0;
+}
+
+div.truelogin form input[type='text'],
+div.truelogin form input[type='password'] {
+    width: 500px;
+    height: 59px;
+    padding: 20px;
+    background-color: #1F395F;
+    color: white;
+    font-size: 18px;
+}
+
+div.truelogin form span {
+    color: white;
+    font-size: 20px;
+}
+
+div.truelogin form span a {
+    color: #0F52D4;
+    text-decoration: none;
+}
+
+div.truelogin form span a:hover {
+    text-decoration: underline;
+}
+
+div.truelogin form input[type='submit'] {
+    color: white;
+    width: 200px;
+    height: 71px;
+    font-size: 22px;
+    background: #329E5E;
+}
+
 
 /*remeber*/
 
