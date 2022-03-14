@@ -7,26 +7,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/external.css">
     <link rel="shortcut icon" href="./images/favicon.png" type="image/x-icon">
-    <style>
-        div.names {
-            display: flex;
-            justify-content: space-between;
-            width: 626px;
-        }
-        
-        div.truelogin div.names input {
-            width: 300px;
-        }
-        
-        div.truelogin div.names input:first-child {
-            margin-right: 26px;
-        }
-        
-        div.truelogin form div:not(.names) input[type='text'],
-        div.truelogin form div:not(.names) input[type='password'] {
-            width: 632px;
-        }
-    </style>
+    <script src="https://kit.fontawesome.com/954941076f.js" crossorigin="anonymous"></script>
+
     <title>Signup</title>
 </head>
 
@@ -34,7 +16,7 @@
     <div class="login">
         <div class="logininfo">
             <div>
-                <img src="./images/logo.png" alt="logo" class="logo login">
+                <img src="./images/logo.png" alt="logo" class="login">
                 <span>Get started with</span>
                 <span>Fashionista</span>
             </div>
@@ -78,16 +60,58 @@
                 </svg>
 
         </div>
-        <div class="truelogin">
-            <h3>Signup</h3>
+        <div class="truesignup">
             <form action="#" method="post">
+                <h3>Signup</h3>
                 <div class="names"><input type="text" name="firstname" placeholder="firstname"><input type="text" name="lastname" placeholder="lastname"></div>
-                <div><input type="text" name="email" placeholder="Email or phone number"></div>
-                <div><input type="password" name="email" placeholder="New password"></div>
-                <div><span>Birthday</span></div>
-            </form>
+                <div class="email"><input type="text" name="email" placeholder="Email or phone number"></div>
+                <div class="password"><input type="password" name="email" placeholder="New password"></div>
+                <div class="birth"><span>Birthday</span><i class="fa-solid fa-circle-question"></i></div>
+                <div class="birthdate">
+                    <select name="birth">
+                        <option value="Jan">Jan</option>
+                        <option value="Jan">Feb</option>
+                        <option value="Jan">Mar</option>
+                        <option value="Jan">Apr</option>
+                        <option value="Jan">May</option>
+                        <option value="Jan">June</option>
+                        <option value="Jan">June</option>
+                        <option value="Jan">August</option>
+                    </select>
+                    <select name="birth">
+                        <option value="Jan">1</option>
+                        <option value="Jan">2</option>
+                        <option value="Jan">3</option>
+                        <option value="Jan">4</option>
+                        <option value="Jan">5</option>
+                        <option value="Jan">6</option>
+                        <option value="Jan">7</option>
+                        <option value="Jan">8</option>
+                    </select>
+                    <select name="birth">
+                        <option value="Jan">2015</option>
+                        <option value="Jan">2016</option>
+                        <option value="Jan">2017</option>
+                        <option value="Jan">2018</option>
+                        <option value="Jan">2019</option>
+                        <option value="Jan">2020</option>
+                        <option value="Jan">2021</option>
+                        <option value="Jan">2022</option>
+                    </select>
+                </div>
+                <div class="gender birth"><span>Gender</span><i class="fa-solid fa-circle-question"></i></div>
+                <div class="genders">
+                    <div><span>Male</span><input type="radio" name="Male" value="Male"></div>
+                    <div><span>Female</span><input type="radio" name="Female" value="Female"></div>
+                    <div><span>Custom</span><input type="radio" name="Custom" value="Custom"></div>
+                </div>
+                <input type="submit" value="Signup">
+                <div class="loginini"><span>Already have an account <a href="./index.html">Login</a></span></div>
         </div>
+        </form>
     </div>
 </body>
+
+</html>
 
 </html>

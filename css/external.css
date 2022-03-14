@@ -1343,13 +1343,33 @@ div.logininfo div {
 
 img.login {
     margin: 0;
+    width: 350px;
+    height: 73px;
+}
+
+div.truelogin div.thecoder {
+    color: white;
+    font-size: 25px;
+    display: block;
+    margin-top: 80px;
+    width: 100%;
+    text-align: center;
 }
 
 div.truelogin h3 {
     color: white;
-    font-size: 25px;
     text-align: center;
-    padding-top: 50px;
+    font-size: 20px;
+    margin-top: 15px;
+}
+
+.truelogin div:first-child span a {
+    color: #0F52D4;
+    text-decoration: none;
+}
+
+div.truelogin div:first-child span a:hover {
+    text-decoration: underline;
 }
 
 div.truelogin form {
@@ -1396,6 +1416,117 @@ div.truelogin form input[type='submit'] {
     height: 71px;
     font-size: 22px;
     background: #329E5E;
+}
+
+div.truesignup {
+    width: 55%;
+    height: 90%;
+    background: #112645;
+}
+
+div.truesignup h3 {
+    color: white;
+    text-align: center;
+}
+
+div.truesignup div.names {
+    display: flex;
+    justify-content: space-between;
+}
+
+div.truesignup div.names input {
+    width: 48%;
+    padding: 20px;
+    background-color: #1F395F;
+    color: white;
+    font-size: 18px;
+    outline: none;
+    border: none;
+    margin: 35px 0 35px 0;
+}
+
+div.truesignup form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    height: 100%;
+}
+
+div.truesignup div {
+    width: 90%;
+}
+
+div.truesignup div.email input,
+div.password input {
+    background-color: #1F395F;
+    color: white;
+    font-size: 18px;
+    padding: 20px;
+    outline: none;
+    width: 100%;
+    margin: 10px 0 10px 0;
+    border: none;
+}
+
+div.birth {
+    color: rgba(255, 255, 255, 0.575);
+    margin: 5px 0;
+}
+
+div.birthdate {
+    display: flex;
+    justify-content: space-between;
+}
+
+div.birthdate select {
+    width: 30%;
+    padding: 10px;
+    background: #1F395F;
+    border: none;
+    outline: none;
+    color: rgba(226, 226, 226, 0.699);
+}
+
+div.genders {
+    display: flex;
+    justify-content: space-between;
+    color: rgba(226, 226, 226, 0.699);
+}
+
+div.truesignup div.genders div {
+    background: #1F395F;
+    display: flex;
+    justify-content: space-between;
+    padding: 15px;
+    margin: 0 5px;
+}
+
+div.truesignup form input[type='submit'] {
+    background: #329E5E;
+    height: 62px;
+    width: 243px;
+    outline: none;
+    font-size: 21px;
+    border: none;
+    color: white;
+}
+
+div.loginini span {
+    color: white;
+    display: block;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+div.loginini span a {
+    color: #0c0fc0;
+    text-decoration: none;
+}
+
+div.l div.loginini span a:hover {
+    text-decoration: underline;
 }
 
 
