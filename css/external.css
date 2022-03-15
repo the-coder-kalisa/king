@@ -5,20 +5,46 @@
     font-family: sans-serif;
 }
 
-::-webkit-scrollbar {
+ ::-webkit-scrollbar {
     background-color: #182539;
     width: 8px;
     border-radius: 10px;
 }
 
-::-webkit-scrollbar-thumb:hover {
+ ::-webkit-scrollbar-thumb:hover {
     background-color: #495668;
 }
 
-::-webkit-scrollbar-thumb {
+ ::-webkit-scrollbar-thumb {
     background-color: #364458;
     border-radius: 10px;
     width: 2px;
+}
+
+div.dropdowns {
+    background: white;
+    color: black;
+    position: fixed;
+    z-index: 50;
+    right: 0;
+    top: 65px;
+    flex-direction: column;
+    display: none;
+}
+
+div.dropdowns a {
+    padding: 10px;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+div.dropdowns a:hover {
+    background: #317a78;
+    color: white;
+}
+
+div.profile:hover div.dropdowns {
+    display: flex;
 }
 
 body {
@@ -111,6 +137,7 @@ div.profile {
     display: flex;
     flex-direction: column;
     color: #889499;
+    cursor: pointer;
 }
 
 img[alt="profile"] {
@@ -325,7 +352,7 @@ div.postinfo {
     margin-top: -5px;
     height: 100px;
     /* border-bottom-left-radius: 10px;
-    border-bottom-right-radius: 10px; */
+border-bottom-right-radius: 10px; */
 }
 
 i.fa-comment,
@@ -438,7 +465,7 @@ button.post {
     padding: 10px;
 }
 
-::placeholder {
+ ::placeholder {
     color: rgb(180, 180, 180);
 }
 
@@ -559,6 +586,7 @@ div.picture {
     display: block;
     margin-left: auto;
     margin-right: auto;
+    position: relative;
 }
 
 img.man {
@@ -1314,10 +1342,10 @@ div.login {
 }
 
 div.logininfo {
-    background: rgba(15, 57, 118, 0.88);
-    width: 50%;
+    background: rgb(20 49 93 / 88%);
+    width: 40%;
     display: flex;
-    height: 90%;
+    height: 80%;
     flex-direction: column;
     align-items: center;
     justify-content: space-around;
@@ -1334,8 +1362,8 @@ svg {
 }
 
 div.truelogin {
-    width: 50%;
-    height: 90%;
+    width: 40%;
+    height: 80%;
     background: #112645;
 }
 
@@ -1355,7 +1383,7 @@ div.truelogin div.thecoder {
     color: white;
     font-size: 25px;
     display: block;
-    margin-top: 80px;
+    margin-top: 55px;
     width: 100%;
     text-align: center;
 }
@@ -1367,12 +1395,19 @@ div.truelogin h3 {
     margin-top: 15px;
 }
 
-.truelogin div:first-child span a {
-    color: #0F52D4;
+div.hellos {
+    display: flex;
+    justify-content: center;
+    color: white;
+    margin-top: 40px;
+}
+
+div.hellos a {
+    color: #1744d5;
     text-decoration: none;
 }
 
-div.truelogin div:first-child span a:hover {
+div.hellos a:hover {
     text-decoration: underline;
 }
 
@@ -1381,18 +1416,27 @@ div.truelogin form {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 80%;
+    margin-top: 56px;
 }
 
 div.truelogin form input {
     outline: none;
     border: none;
-    margin: 35px 0 35px 0;
+    margin: 20px 0 20px 0;
+}
+
+div.logininfo div span a:hover {
+    text-decoration: underline;
+}
+
+div.logininfo div span a {
+    color: rgb(69 209 56);
+    text-decoration: none;
 }
 
 div.truelogin form input[type='text'],
 div.truelogin form input[type='password'] {
-    width: 500px;
+    width: 80%;
     height: 59px;
     padding: 20px;
     background-color: #1F395F;
@@ -1400,31 +1444,31 @@ div.truelogin form input[type='password'] {
     font-size: 18px;
 }
 
-div.truelogin form span {
+div.truelogin span {
     color: white;
-    font-size: 20px;
+    font-size: 32px;
 }
 
-div.truelogin form span a {
+div.truelogin span a {
     color: #0F52D4;
     text-decoration: none;
 }
 
-div.truelogin form span a:hover {
+div.truelogin span a:hover {
     text-decoration: underline;
 }
 
-div.truelogin form input[type='submit'] {
+div.truelogin input[type='submit'] {
     color: white;
-    width: 200px;
-    height: 71px;
+    width: 183px;
+    height: 59px;
     font-size: 22px;
     background: #329E5E;
 }
 
 div.truesignup {
     width: 55%;
-    height: 90%;
+    height: 80%;
     background: #112645;
 }
 
@@ -1440,13 +1484,13 @@ div.truesignup div.names {
 
 div.truesignup div.names input {
     width: 48%;
-    padding: 20px;
+    padding: 18px;
     background-color: #1F395F;
     color: white;
     font-size: 18px;
     outline: none;
     border: none;
-    margin: 35px 0 35px 0;
+    height: 55px;
 }
 
 div.truesignup form {
@@ -1458,7 +1502,7 @@ div.truesignup form {
 }
 
 div.truesignup div {
-    width: 90%;
+    width: 70%;
 }
 
 div.truesignup div.email input,
@@ -1466,16 +1510,14 @@ div.password input {
     background-color: #1F395F;
     color: white;
     font-size: 18px;
-    padding: 20px;
+    padding: 18px;
     outline: none;
     width: 100%;
-    margin: 10px 0 10px 0;
     border: none;
 }
 
 div.birth {
     color: rgba(255, 255, 255, 0.575);
-    margin: 5px 0;
 }
 
 div.birthdate {
@@ -1502,14 +1544,14 @@ div.truesignup div.genders div {
     background: #1F395F;
     display: flex;
     justify-content: space-between;
-    padding: 15px;
+    padding: 12px;
     margin: 0 5px;
 }
 
 div.truesignup form input[type='submit'] {
     background: #329E5E;
-    height: 62px;
-    width: 243px;
+    height: 50px;
+    width: 223px;
     outline: none;
     font-size: 21px;
     border: none;
